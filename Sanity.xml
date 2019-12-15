@@ -1,0 +1,60 @@
+<suite name="suite1">
+
+	<test name="login">
+	
+		<classes>
+		
+			<class name="com.test.testng.basics.SampleAnnotation"></class>
+			<class name="com.test.testng.basics.SampleAnnotation2"></class>
+			<class name="com.test.testng.basics.SampleAnnotation3"></class>
+		
+		</classes>
+	
+	</test>
+	
+	<test name="register">
+	
+		<packages>
+		
+			<package name="com.test.testng.basics"></package>
+		
+		</packages>
+		
+	</test>
+		
+		<test name="methods">
+		
+		<classes>
+		
+			<class name="com.test.testng.basics.SampleAnnotation">
+			
+				<methods><include name="m2"></include> </methods>
+			
+			</class>
+		
+		</classes>
+		
+		</test>
+
+
+<test name="to run group">
+
+<groups>
+
+	<run>
+		  <include name="sanity"  />
+		
+	</run>
+
+</groups>
+
+		<classes>
+		
+			<class name="com.test.testng.basics.SampleAnnotation">
+			</class>
+		
+		</classes>
+
+</test>
+
+</suite>

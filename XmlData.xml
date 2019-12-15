@@ -1,0 +1,14 @@
+<suite name="suite1">
+
+	<parameter name="url" value="https://selenium.dev/" ></parameter>
+
+	<test name="login">
+	
+		<classes>
+		
+			<class name="com.test.testng.basics.SampleAnnotation2"></class>
+		</classes>
+		
+		</test>
+
+</suite>
